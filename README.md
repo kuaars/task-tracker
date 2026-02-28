@@ -49,3 +49,7 @@
 ```bash
 git clone https://github.com/kuaars/task-tracker.git
 cd task-tracker
+```
+2. Установите зависимости:
+```bash
+pip install -r requirements.txt

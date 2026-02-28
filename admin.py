@@ -86,7 +86,7 @@ def addtask():
             username = user_data
 
         addt = Toplevel(root)
-        addt.geometry('500x300')
+        addt.geometry('500x400')
         addt.title(f"Задача для {username}")
         addt.grab_set()
         addt.transient(root)
@@ -215,9 +215,6 @@ def checkuser():
 
     delete_btn = ttk.Button(button_frame, text="Удалить задачу", command=delete_task)
     delete_btn.pack(side=LEFT, padx=5)
-
-    close_btn = ttk.Button(button_frame, text="Закрыть", command=check.destroy)
-    close_btn.pack(side=LEFT, padx=5)
 
 checktasks = ttk.Button(frame, text='Задачи', command=checkuser)
 checktasks.pack(pady=20)
